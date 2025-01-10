@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@TECH_SANDEEP_ANIME</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: "Courier New", monospace;
+      color: #00ff00; /* Matrix green color */
+      background: black;
+      overflow: hidden;
+    }
+
+    /* Background Animation */
+    .hacking-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: linear-gradient(90deg, #000000, #020202, #000000); /* Sigma vibe gradient */
+    }
+
+    /* Floating Animated Lines */
+    .hacking-bg span {
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent, #00ff00, transparent);
+      animation: hack-animation 2s linear infinite;
+      opacity: 0.4;
+    }
+
+    @keyframes hack-animation {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(100%);
+      }
+    }
+
+    /* Text Container */
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 20px;
+      margin-top: 80px;
+    }
+
+    /* Logo Style */
+    .logo {
+      font-size: 80px;
+      font-weight: bold;
+      color: #00ff00;
+      text-shadow: 0 0 10px #00ff00, 0 0 30px #00ff00, 0 0 50px #00ff00;
+      animation: instantAppear 0.5s ease-out;
+      position: relative;
+    }
+
+    /* Image Over the Logo with Rotation Fixed */
+    .logo img {
+      position: absolute;
+      top: -80px; /* Adjusted to move image up */
+      left: 50%;
+      transform: translateX(-50%) rotate(0deg); /* Fixed rotation */
+      width: 80px; /* Adjust size of image */
+      height: auto;
+      border-radius: 50%; /* Circular image */
+      box-shadow: 0 0 10px #00ff00; /* Green glow effect */
+    }
+
+    @keyframes instantAppear {
+      0% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Bio Section */
+    .bio {
+      margin-top: 30px;
+      font-size: 24px;
+      line-height: 1.8;
+      font-weight: bold;
+      color: #00ff00;
+      text-shadow: 0 0 10px #00ff00;
+    }
+
+    .bio a {
+      color: #00ff00;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 26px;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    }
+
+    .bio a:hover {
+      text-shadow: 0 0 30px #00ff00, 0 0 50px #00ff00;
+    }
+
+    /* Footer */
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      color: #00ff00;
+      text-shadow: 0 0 10px #00ff00;
+    }
+
+    /* Responsive Design for Mobile */
+    @media (max-width: 768px) {
+      .logo {
+        font-size: 60px;
+      }
+      .bio {
+        font-size: 20px;
+      }
+      .bio a {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hacking-bg">
+  
+    <script>
+      for (let i = 0; i < 50; i++) {
+        const span = document.createElement('span');
+        span.style.left = `${Math.random() * 100}vw`;
+        span.style.animationDelay = `${Math.random() * 3}s`;
+        span.style.animationDuration = `${Math.random() * 5 + 2}s`;
+        document.querySelector('.hacking-bg').appendChild(span);
+      }
+    </script>
+  </div>
+
+  <div class="container">
+    <div class="logo">
+      AzRdev
+      <img src="https://i.ibb.co/jDtPLT3/IMG-20250109-233701-039.jpg" alt="Sandip Logo">
+    </div>
+
+    <div class="bio">
+      <p><b>Skills:</b> Coding, Ethical Hacking, Bot Making, Designing</p>
+      <p><b>Telegram Channels:</b></p>
+      <p>
+        <a href="https://t.me/Kingrebhai" target="_blank">Kingrebhai</a> |
+        <a href="https://t.me/jujustuhindi" target="_blank">jujustuhindi</a> |
+        <a href="https://t.me/tech_sandeep_anime" target="_blank">TECH_SANDEEP_ANIME</a>
+      </p>
+      <p><b>Username:</b> @TECH_SANDEEP_ANIME</p>
+    </div>
+  </div>
+
+  <div class="footer">© 2025 @TECH_SANDEEP_ANIME. All Rights Reserved.</div>
+</body>
+</html>
